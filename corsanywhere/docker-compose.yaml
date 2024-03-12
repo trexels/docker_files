@@ -1,0 +1,14 @@
+services:
+  corsanywhere:
+    image: "ubuntuserver/cors-anywhere"
+    user: "node"
+    working_dir: /home/node/node_modules/cors-anywhere
+    environment:
+      NODE_ENV: production
+      PORT: 7777
+      CORSANYWHERE_RATELIMIT: '150 2'
+#    volumes:
+#      - ./:/home/node
+    ports:
+      - "7777:7777"
+    command: "node server.js"
