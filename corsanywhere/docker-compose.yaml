@@ -1,6 +1,6 @@
 services:
   corsanywhere:
-    image: "ubuntuserver/cors-anywhere"
+    image: "cors-anywhere"
     user: "node"
     working_dir: /home/node/node_modules/cors-anywhere
     environment:
