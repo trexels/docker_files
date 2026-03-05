@@ -1,4 +1,4 @@
-FROM node:bookworm-slim
+FROM node:current-bookworm-slim
 #FROM node:19-bullseye
 
 WORKDIR /home/node
